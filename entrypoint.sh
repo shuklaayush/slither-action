@@ -105,6 +105,7 @@ install_slither()
     export PATH="/opt/slither/bin:$PATH"
     pip3 install wheel
     pip3 install "$SLITHERPKG"
+    pip3 install git+https://github.com/crytic/crytic-compile@master --ignore-installed
 }
 
 install_deps()
